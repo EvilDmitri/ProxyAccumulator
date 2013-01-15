@@ -13,4 +13,6 @@ class Proxy():
         self.date_last_viewed = date_last_viewed
 
 
-
+    def get_data(self):
+        data_string = str(self.ip) + ":" + str(self.port + "\t" + str(self.proxy_type))
+        return data_string
